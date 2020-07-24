@@ -1,0 +1,56 @@
+$color-primary: #27588B;
+$color-secondary: #779BC0;	
+$color-light: #E6EFF9;
+$color-info: #13406D;
+$color-dark: #05284D;
+$color-danger: #D52F2F;
+$color-warning: #D5BF2F ;
+$color-success: #25A82E;
+
+$theme-colors: (
+"primary": $color-primary,
+"secondary": $color-secondary,
+"light": $color-light,
+"info": $color-info,
+"dark": $color-dark
+);
+
+@import "~bootstrap/scss/bootstrap";
+
+@import '~font-awesome/scss/_variables.scss';
+$fa-font-path: "~font-awesome/fonts";
+@import '~font-awesome/scss/font-awesome.scss';
+
+html, body { height: 100%; width: 100%; margin: 0; }
+div { height: 100%; text-align: center; vertical-align: middle;}
+
+.header {
+    height: 5vw;
+}
+.main {
+    height: 80%;
+    background-color: $color-secondary;
+}
+.footer {
+    background-color: $dark; 
+    height: 10%;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    height: fit-content;
+}
+
+.white_to_light {
+    // filter: invert(56%) sepia(31%) saturate(410%) hue-rotate(170deg) brightness(99%) contrast(95%);
+}
+
+.square {
+    width:100%
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
