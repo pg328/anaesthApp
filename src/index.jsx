@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import './favicon.ico'
+import './img/favicons/favicon.ico'
 import "./css/main.scss";
 
 const HeaderComponent = () => {
