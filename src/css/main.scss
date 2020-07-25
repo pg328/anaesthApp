@@ -1,8 +1,8 @@
-$color-primary: #27588B;
-$color-secondary: #779BC0;	
-$color-light: #E6EFF9;
-$color-info: #13406D;
-$color-dark: #05284D;
+$color-primary: #A3C4BC;
+$color-secondary: #E7EFC5;
+$color-light: #f4f4f8;
+$color-info: #153e5c;
+$color-dark: #413C58;
 $color-danger: #D52F2F;
 $color-warning: #D5BF2F ;
 $color-success: #25A82E;
@@ -22,18 +22,22 @@ $fa-font-path: "~font-awesome/fonts";
 @import '~font-awesome/scss/font-awesome.scss';
 
 html, body { height: 100%; width: 100%; margin: 0; }
-div { height: 100%; text-align: center; vertical-align: middle;}
+div { height: 100%; text-align: center; vertical-align: middle;font-family: 'Playfair Display', serif;}
+
 
 .header {
-    height: 5vw;
+    background-color: $color-primary;
 }
 .main {
-    height: 80%;
-    background-color: $color-secondary;
+    background-color: $color-light;
 }
 .footer {
-    background-color: $dark; 
-    height: 10%;
+    background-color: $color-secondary;
+}
+
+#app {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 /* Show the dropdown menu on hover */
@@ -49,6 +53,7 @@ div { height: 100%; text-align: center; vertical-align: middle;}
 .square {
     width:100%
 }
+
 ul {
     list-style-type: none;
     margin: 0;

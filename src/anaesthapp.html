@@ -1,99 +1,71 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8"> 
-        <link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon'/>
-        <title>Pruzame Ltd.</title>
-    </head>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon'/>
+    <title>Pruzame Ltd.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;800&display=swap" rel="stylesheet">
+</head>
 
-    <body>
-        <div id="root">
-            <div class="header">
-                <nav class="navbar navbar-expand-lg bg-info navbar-info h-100 p-0">
-                    <div class="container-fluid">
-                        <div class="navbar-header" style="width:10%;">
-                            <a class="navbar-brand text-light square" href="#"><img alt="Pruzame Logo" class="img-fluid white_to_light" src="./img/PruzameLogo.png" /></a>
-                            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbar" aria-expanded="false" aria-label="Toggle Navigation"> -->
-                                <!-- <i class="fa fa-angle-down" aria-hidden="true"></i> -->
-                            <!-- </button> -->
-                        </div>
-                        <!-- <div id="navbar" class="collapse navbar-collapse navbar-nav nav navbar-right"> -->
-                        <div id="navbar" class="navbar-nav nav navbar-right">
-                            <li class="nav-item btn-lg my-auto">                           
-                                <a class="nav-link active text-secondary" href="#"> Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item btn-lg my-auto dropdown">
-                                <a class="nav-link text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> For Patients <i class="fa fa-angle-down"></i></a>
-                                <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item text-dark" href="#">About Anaesthesia</a>
-                                    <a class="dropdown-item text-dark" href="#">Anaesthetic Fees</a>
-                                    <a class="dropdown-item text-dark" href="#">Useful Links</a>
-                                    <a class="dropdown-item text-dark" href="#">Privacy Policy</a>
-                                </div>
-                            </li>
-                            <li class="nav-item btn-lg my-auto">
-                                <a class="n-lg nav-link text-light" href="#"> Contact </a>
-                            </li>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-            <div class="main">
-                <div style="height:3%; display:grid;"></div>
-                <div style=" display:grid;">
-                    <a class="navbar-brand text-light" href="#"><img alt="Pruzame - Complex Anaesthesia in London" class="img-fluid rounded" src="./img/PruzameLogo.png" /></a>
-                </div>
-                <div style="height: 5%; display:grid;">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cras tincidunt lobortis feugiat vivamus. Urna molestie at elementum eu facilisis sed odio morbi. Arcu cursus euismod quis viverra nibh cras pulvinar mattis. Neque sodales ut etiam sit amet nisl purus in. Faucibus a pellentesque sit amet porttitor eget dolor morbi non. Faucibus turpis in eu mi. Sed enim ut sem viverra aliquet. Nisi quis eleifend quam adipiscing vitae proin sagittis. Nunc mattis enim ut tellus elementum. Eget arcu dictum varius duis at consectetur lorem donec. Consectetur lorem donec massa sapien faucibus et molestie. Orci a scelerisque purus semper eget duis at. Dolor purus non enim praesent elementum facilisis leo vel fringilla. Tristique senectus et netus et malesuada fames ac turpis egestas. Pretium lectus quam id leo in vitae turpis massa. Elementum curabitur vitae nunc sed velit dignissim sodales ut. Purus faucibus ornare suspendisse sed nisi lacus sed viverra. Malesuada proin libero nunc consequat interdum varius sit. Sed viverra tellus in hac.
+<body>
+<div id="root">
+<!--    <div id="header" class="bg-info">-->
+<!--        <nav class="navbar navbar-expand-lg bg-info navbar-info p-0 w-100" style="position:fixed; height: 5vw">-->
+<!--            <div class="container-fluid">-->
+<!--                <div class="navbar-header" style="width:10%;">-->
+<!--                    <a class="navbar-brand text-light square" href="#"><img alt="Pruzame Logo" class="img-fluid white_to_light" src="./img/PruzameLogo.png" /></a>-->
+<!--                    &lt;!&ndash; <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbar" aria-expanded="false" aria-label="Toggle Navigation"> &ndash;&gt;-->
+<!--                    &lt;!&ndash; <i class="fa fa-angle-down" aria-hidden="true"></i> &ndash;&gt;-->
+<!--                    &lt;!&ndash; </button> &ndash;&gt;-->
+<!--                </div>-->
+<!--                &lt;!&ndash; <div id="navbar" class="collapse navbar-collapse navbar-nav nav navbar-right"> &ndash;&gt;-->
+<!--                <div id="navbar" class="navbar-nav nav navbar-right">-->
+<!--                    <li class="nav-item btn-lg my-auto">-->
+<!--                        <a class="nav-link active text-secondary" href="#"> Home <span class="sr-only">(current)</span></a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item btn-lg my-auto dropdown">-->
+<!--                        <a class="nav-link text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> For Patients <i class="fa fa-angle-down"></i></a>-->
+<!--                        <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">-->
+<!--                            <a class="dropdown-item text-dark" href="#">About Anaesthesia</a>-->
+<!--                            <a class="dropdown-item text-dark" href="#">Anaesthetic Fees</a>-->
+<!--                            <a class="dropdown-item text-dark" href="#">Useful Links</a>-->
+<!--                            <a class="dropdown-item text-dark" href="#">Privacy Policy</a>-->
+<!--                        </div>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item btn-lg my-auto">-->
+<!--                        <a class="n-lg nav-link text-light" href="#"> Contact </a>-->
+<!--                    </li>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </nav>-->
+<!--    </div>-->
+<!--    <div class="main bg-secondary">-->
+<!--        <div class="container-fluid" style="margin-top: 7vw;">-->
+<!--            <div> -->
+<!--                <a class="navbar-brand text-light" href="#"><img alt="Pruzame - Complex Anaesthesia in London" class="img-fluid rounded" src="./img/PruzameLogo.png" /></a>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <p>-->
+<!--                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cras tincidunt lobortis feugiat vivamus. Urna molestie at elementum eu facilisis sed odio morbi. Arcu cursus euismod quis viverra nibh cras pulvinar mattis. Neque sodales ut etiam sit amet nisl purus in. Faucibus a pellentesque sit amet porttitor eget dolor morbi non. Faucibus turpis in eu mi. Sed enim ut sem viverra aliquet. Nisi quis eleifend quam adipiscing vitae proin sagittis. Nunc mattis enim ut tellus elementum. Eget arcu dictum varius duis at consectetur lorem donec. Consectetur lorem donec massa sapien faucibus et molestie. Orci a scelerisque purus semper eget duis at. Dolor purus non enim praesent elementum facilisis leo vel fringilla. Tristique senectus et netus et malesuada fames ac turpis egestas. Pretium lectus quam id leo in vitae turpis massa. Elementum curabitur vitae nunc sed velit dignissim sodales ut. Purus faucibus ornare suspendisse sed nisi lacus sed viverra. Malesuada proin libero nunc consequat interdum varius sit. Sed viverra tellus in hac.-->
 
-                        Cursus turpis massa tincidunt dui ut ornare lectus sit amet. Commodo ullamcorper a lacus vestibulum sed arcu non odio euismod. Suscipit adipiscing bibendum est ultricies. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Velit scelerisque in dictum non consectetur a. Leo a diam sollicitudin tempor id eu nisl nunc. Ut tellus elementum sagittis vitae et leo. Id volutpat lacus laoreet non curabitur gravida arcu. Nulla facilisi cras fermentum odio. Sem integer vitae justo eget magna. Egestas dui id ornare arcu odio ut sem nulla pharetra.
+<!--                    Cursus turpis massa tincidunt dui ut ornare lectus sit amet. Commodo ullamcorper a lacus vestibulum sed arcu non odio euismod. Suscipit adipiscing bibendum est ultricies. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Velit scelerisque in dictum non consectetur a. Leo a diam sollicitudin tempor id eu nisl nunc. Ut tellus elementum sagittis vitae et leo. Id volutpat lacus laoreet non curabitur gravida arcu. Nulla facilisi cras fermentum odio. Sem integer vitae justo eget magna. Egestas dui id ornare arcu odio ut sem nulla pharetra.-->
 
-                        Venenatis urna cursus eget nunc. A lacus vestibulum sed arcu non odio euismod lacinia at. Arcu non odio euismod lacinia at quis risus sed. Diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Turpis egestas sed tempus urna et pharetra pharetra massa massa. Quam lacus suspendisse faucibus interdum posuere lorem ipsum. Scelerisque eu ultrices vitae auctor eu. Non nisi est sit amet facilisis magna etiam. Massa id neque aliquam vestibulum morbi blandit cursus. Urna porttitor rhoncus dolor purus non enim praesent elementum.
+<!--                    Venenatis urna cursus eget nunc. A lacus vestibulum sed arcu non odio euismod lacinia at. Arcu non odio euismod lacinia at quis risus sed. Diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Turpis egestas sed tempus urna et pharetra pharetra massa massa. Quam lacus suspendisse faucibus interdum posuere lorem ipsum. Scelerisque eu ultrices vitae auctor eu. Non nisi est sit amet facilisis magna etiam. Massa id neque aliquam vestibulum morbi blandit cursus. Urna porttitor rhoncus dolor purus non enim praesent elementum.-->
 
-                        Blandit turpis cursus in hac habitasse platea. Egestas tellus rutrum tellus pellentesque. Egestas integer eget aliquet nibh praesent tristique. Vulputate sapien nec sagittis aliquam. Convallis convallis tellus id interdum velit laoreet id. Iaculis urna id volutpat lacus. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. In nisl nisi scelerisque eu. Cursus turpis massa tincidunt dui ut ornare lectus sit. Adipiscing diam donec adipiscing tristique risus nec feugiat in. Quis risus sed vulputate odio ut enim blandit. Ac tincidunt vitae semper quis lectus. Orci a scelerisque purus semper eget. Nisl purus in mollis nunc.
+<!--                    Blandit turpis cursus in hac habitasse platea. Egestas tellus rutrum tellus pellentesque. Egestas integer eget aliquet nibh praesent tristique. Vulputate sapien nec sagittis aliquam. Convallis convallis tellus id interdum velit laoreet id. Iaculis urna id volutpat lacus. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. In nisl nisi scelerisque eu. Cursus turpis massa tincidunt dui ut ornare lectus sit. Adipiscing diam donec adipiscing tristique risus nec feugiat in. Quis risus sed vulputate odio ut enim blandit. Ac tincidunt vitae semper quis lectus. Orci a scelerisque purus semper eget. Nisl purus in mollis nunc.-->
 
-                        Ultricies tristique nulla aliquet enim tortor at auctor urna. Ut enim blandit volutpat maecenas volutpat blandit. Blandit massa enim nec dui nunc mattis enim. Enim tortor at auctor urna nunc id cursus metus aliquam. Etiam erat velit scelerisque in. Laoreet suspendisse interdum consectetur libero id. Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Senectus et netus et malesuada fames ac turpis egestas. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Proin nibh nisl condimentum id. Sed libero enim sed faucibus turpis. Tortor posuere ac ut consequat. Odio euismod lacinia at quis risus sed vulputate. Ut faucibus pulvinar elementum integer enim neque volutpat ac. Quis imperdiet massa tincidunt nunc. Arcu dictum varius duis at. Tellus molestie nunc non blandit massa enim nec. Eu augue ut lectus arcu bibendum. Dis parturient montes nascetur ridiculus mus mauris vitae. Nulla posuere sollicitudin aliquam ultrices sagittis orci.
-                    </p>
-                </div>
-            </div>
-            <div class="footer" style=" display:grid;">
-                <div class="container">
-                    <div class="row">
-                        <!-- <div class="col-sm text-light"> -->
-                        <!--     <span><u>Example</u></span> -->
-                        <!--     <ul> -->
-                        <!--         <li><a href="#" class="text-light">Link</a></li> -->
-                        <!--     </ul> -->
-                        <!-- </div> -->    
-                        <!-- <div class="col-sm text-light"> -->
-                        <!--     <span><u>Example</u></span> -->
-                        <!--     <ul> -->
-                        <!--         <li><a href="#" class="text-light">Link</a></li> -->
-                        <!--     </ul> -->
-                        <!-- </div> -->    
-                        <!-- <div class="col-sm text-light"> -->
-                        <!--     <span><u>Example</u></span> -->
-                        <!--     <ul> -->
-                        <!--         <li><a href="#" class="text-light">Link</a></li> -->
-                        <!--     </ul> -->
-                        <!-- </div> -->    
-                        <!-- <div class="col-sm text-light"> -->
-                        <!--     <span><u>Example</u></span> -->
-                        <!--     <ul> -->
-                        <!--         <li><a href="#" class="text-light">Link</a></li> -->
-                        <!--     </ul> -->
-                        <!-- </div> -->    
-                        <!-- <div class="col-sm text-light"> -->
-                        <!--     <span><u>Example</u></span> -->
-                        <!--     <ul> -->
-                        <!--         <li><a href="#" class="text-light">Link</a></li> -->
-                        <!--     </ul> -->
-                        <!-- </div> -->    
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body>
+<!--                    Ultricies tristique nulla aliquet enim tortor at auctor urna. Ut enim blandit volutpat maecenas volutpat blandit. Blandit massa enim nec dui nunc mattis enim. Enim tortor at auctor urna nunc id cursus metus aliquam. Etiam erat velit scelerisque in. Laoreet suspendisse interdum consectetur libero id. Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Senectus et netus et malesuada fames ac turpis egestas. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Proin nibh nisl condimentum id. Sed libero enim sed faucibus turpis. Tortor posuere ac ut consequat. Odio euismod lacinia at quis risus sed vulputate. Ut faucibus pulvinar elementum integer enim neque volutpat ac. Quis imperdiet massa tincidunt nunc. Arcu dictum varius duis at. Tellus molestie nunc non blandit massa enim nec. Eu augue ut lectus arcu bibendum. Dis parturient montes nascetur ridiculus mus mauris vitae. Nulla posuere sollicitudin aliquam ultrices sagittis orci.-->
+<!--                </p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div id="footer" class="bg-dark">-->
+<!--        <p>-->
+<!--            Footer Content-->
+<!--        </p>-->
+
+<!--    </div>-->
+</div>
+</body>
 
 </html>

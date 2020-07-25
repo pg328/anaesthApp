@@ -1,16 +1,15 @@
-var HtmlWebpackPlugin = require("html-webpack-plugin")
-const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin")
-const TerserPlugin = require("terser-webpack-plugin")
-var path = require("path");
+var HtmlWebpackPlugin = require("html-webpack-plugin");
+const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
     optimization: {
         minimizer: [new TerserPlugin(), new OptimizeCssAssetsPlugin()]
     },
     entry: {
-        anaesthapp: "./src/index.jsx",
+        anaesthapp: "./src/js/index.jsx",
         polyfill: '@babel/polyfill',
-        bootstrap: "./src/bootstrap_import.js",
+        bootstrap: "./src/js/bootstrap_import.js",
     },
     module: {
         rules: [
@@ -38,4 +37,4 @@ module.exports = {
 			template: "./src/anaesthapp.html"
 		})
 	]
-}
+};
