@@ -1,7 +1,7 @@
 {
   "name": "anaesthapp",
   "version": "1.0.0",
-  "description": "Shane George's website for the purpose of visibility to current, past and potential patients.",
+  "description": "Pruzame Ltd's website for the purpose of visibility to current, past and potential patients.",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --config webpack.dev.js --open",
