@@ -7,7 +7,7 @@ module.exports = {
         minimizer: [new TerserPlugin(), new OptimizeCssAssetsPlugin()]
     },
     entry: {
-        anaesthapp: "./src/js/index.jsx",
+        anaesthapp: "./src/js/index.js",
         polyfill: '@babel/polyfill',
         bootstrap: "./src/js/bootstrap_import.js",
     },

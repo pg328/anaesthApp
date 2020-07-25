@@ -8,7 +8,8 @@ module.exports = merge(common,  {
 	mode: "development",
     devtool: "eval-cheap-module-source-map",
     devServer: {
-        port: 8091
+        port: 8091,
+		historyApiFallback: true,
     },
 	plugins: [
 		new CleanWebpackPlugin(),

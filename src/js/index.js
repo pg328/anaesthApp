@@ -4,5 +4,10 @@ import '../img/favicons/favicon.ico'
 import "../css/main.scss";
 import './bootstrap_import'
 import App from './App'
+import { hot } from "react-hot-loader/root";
 
-ReactDOM.render(<App />, document.querySelector("#root"));
+
+const render = (Component) =>
+    ReactDOM.render(<Component />, document.getElementById("root"));
+
+render(hot(App));
