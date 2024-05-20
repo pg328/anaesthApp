@@ -1,0 +1,30 @@
+---
+const toggleMenu = () => {
+  const menu = document.getElementById('mobile-menu');
+  if (menu) {
+    menu.classList.toggle('hidden');
+  }
+};
+---
+
+<header class="bg-blue-600 text-white">
+  <div class="container mx-auto p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">Prozame</h1>
+    <nav>
+      <ul class="hidden md:flex space-x-4">
+        <li><a href="/" class="hover:underline">Home</a></li>
+        <li><a href="/about" class="hover:underline">About</a></li>
+        <li><a href="/contact" class="hover:underline">Contact</a></li>
+      </ul>
+      <button class="md:hidden" onClick={toggleMenu}>☰</button>
+    </nav>
+  </div>
+  <div id="mobile-menu" class="md:hidden hidden">
+    <ul class="space-y-2">
+      <li><a href="/" class="block px-4 py-2 hover:underline">Home</a></li>
+      <li><a href="/about" class="block px-4 py-2 hover:underline">About</a></li>
+      <li><a href="/contact" class="block px-4 py-2 hover:underline">Contact</a></li>
+    </ul>
+  </div>
+</header>
+

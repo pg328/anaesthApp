@@ -1,0 +1,21 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Card from '../components/Card.astro';
+
+const aboutContent = {
+  firstSection: "Surgery has needed innovations in anaesthesia to deliver complex procedures. Anaesthesia has been present since ancient times, where a combination of hallucinogenics, opiates, alcohol and restraint was used to enable surgery.\n\nSince the earliest times in the UK, anaesthesia has been delivered under the direct supervision of physicians. This was a direct consequence of the risks associated with anaesthesia that included mortality.\n\nModern anaesthesia is vastly safer with generational improvements in inhaled (breathed in) anaesthesia, the development of much safer intravenous (directly into the blood) agents.\n\nThe classical triad of anaesthesia is recognised as loss of consciousness, analgesia (pain relief) and paralysis (minimal movement so surgery can be conducted safely). All 3 aspects may not need to be used, for example analgesia may be delivered by local anaesthetic techniques, such that total loss of consciousness is not necessary and some procedures may not require paralysis.\n\nIn addition to the triad above, the anaesthetist provides the clinical physiological management that the patient can no longer do as they are anaesthetised. This includes looking after the cardiovascular parameters such as blood pressure, heart rate and rhythm and ensuring adequate oxygen is delivered to the body and CO2 removed. Temperature, kidney function, brain perfusion and many other parameters may also be monitored during different procedures.",
+  secondSection: "Despite the great increases in safety in anaesthesia, mortality still occurs under anaesthesia. These risks are small but nevertheless remain, separate from the risks of surgery. Current figures in the UK suggest a risk of 1 in 100,000 mortality due solely to anaesthesia but this may increase to 1 in 10,000 where more specialist techniques are used (such as invasive lines or intraoperative transoesophageal echocardiography).\n\nMinor complications such as damage to teeth, sore throat, nausea and discomfort may be much more frequent.\n\nThe list above is not exhaustive and is procedure specific. More information can be obtained from your anaesthetist or you can visit the site below from the Royal College of Anaesthetists\n\n https://www.rcoa.ac.uk/patient-information/patient-information-resources/anaesthesia-risk",
+  contact: "If you have any enquiries, email philip@forge.limited!"
+};
+---
+
+<Header />
+
+<main class="container mx-auto p-4">
+  <Card title="About Anaesthesia" description={aboutContent.firstSection} />
+  <Card title="Risks in Anaesthesia" description={aboutContent.secondSection} />
+</main>
+
+<Footer />
+

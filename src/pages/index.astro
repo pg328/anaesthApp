@@ -1,0 +1,19 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Card from '../components/Card.astro';
+
+const homepageContent = {
+  firstSection: "Dr Shane George specialises in the delivery of complex anaesthesia. He qualified from St. Bartholomew's Hospital, University of London in 1986 and has delivered anaesthesia for over 30 years. He is fully qualified in anaesthesia (FRCA(UK)), medicine (FRCP(Edin)) and Critical Care Medicine (FFICM).\n\nHe has been a practicing consultant in Anaesthesia and Intensive Care for over 23 years with 13 years at Harefield Hospital, London, 4 years at the John Radcliffe hospital in Oxford and  currently has spent 5 years at the Royal Papworth Hospital, in Cambridge.\n\n\nHe has particular expertise in perioperative Transoesophageal echocardiography, having been a leading practitioner during its considerable development from 1992 with single plane probes, biplane probes, multiplane probes and now 3D echocardiography. He led the UK's leading perioperative transoesophageal echocardiography training programme from 2001 to 2006 at Harefield hospital. He has maintained accreditation/ certification in Echocardiography since 1995 and currently holds accreditation with the European Society of Echocartdiography.\n\nHe has a special interest in Cardiothoracic Intensive Care having been the Lead of the  Cardiothoracic Critical Care unit at John Radcliffe Hospital after they moved into a newly equipped unit. During his time there, he oversaw a doubling in activity,  halving of mortality and changes in working practice to a modern delivery of care.\n\nOver the last few years at Royal Papworth, he has concentrated more time in Cardiothoracic anaesthesia, providing anaesthesia for complex surgery including heart and lung transplantation, ventricular assist devices, minimal access cardiac surgery and complex aortic surgery.\n\nHe leads the assessment and policies relating to anaphylaxis in anaesthesia and the practice of sedation by non-anaesthetists at Royal papworth.\n\nNationally, he is the President of the Society of Anaesthetists in Radiology from 2016.\n\nHe has delivered his private practice in London from 1997 at the Harley Street Clinic, Wellington Hospitals and the Bupa Cromwell Hospital. He delivers for a variety of surgery  but has a special interest in delivering the anaesthesia for minimal access cardiac surgery and interventional radiology  for cerebral aneurysms.",
+  secondSection: "If you have any enquiries, email philip@forge.limited!"
+};
+---
+
+<Header />
+
+<main class="container mx-auto p-4">
+  <Card title="Homepage" description={homepageContent.firstSection} />
+</main>
+
+<Footer />
+
